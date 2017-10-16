@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. HTML5 Form &mdash; HTML5_CSS3 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="HTML5_CSS3 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="HTML5 New Markup" href="index.html"/>
+        <link rel="next" title="Video and Audio Todo" href="../html5_video_audio/index.html"/>
+        <link rel="prev" title="2. HTML5 More Semantic" href="02_HTML5_MORE_SEMANTIC.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> HTML5_CSS3
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">HTML5 New Markup</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_HTML5_MARKUP.html">1. HTML5 Basic Markup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_HTML5_MORE_SEMANTIC.html">2. HTML5 More Semantic</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. HTML5 Form</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#form-attributes">3.1. Form attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#required-attribute">Required attribute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-placeholder-attribute">The placeholder Attribute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-pattern-attribute">The pattern Attribute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-disabled-vs-readonly-attribute">The disabled vs. readonly Attribute</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#input-type">3.2. Input type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-new-form-control-in-html5">3.3. Additional new form control in HTML5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-to-exiting-form-controll">3.4. Changes to exiting form controll</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../html5_video_audio/index.html">Video and Audio Todo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../html5_canvas/index.html">Canvas todo</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">HTML5_CSS3</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">HTML5 New Markup</a> &raquo;</li>
+        
+      <li>3. HTML5 Form</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/html5_markup/03_HTML5_FORM.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="html5-form">
+<h1>3. HTML5 Form<a class="headerlink" href="#html5-form" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="form-attributes">
+<h2>3.1. Form attributes<a class="headerlink" href="#form-attributes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="required-attribute">
+<h3>Required attribute<a class="headerlink" href="#required-attribute" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">form</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">ul</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">&quot;url&quot;</span><span class="o">&gt;</span><span class="n">My</span> <span class="n">website</span> <span class="ow">is</span> <span class="n">located</span> <span class="n">at</span><span class="p">:</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;url&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;url&quot;</span> <span class="n">required</span><span class="o">&gt;</span>
+  <span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">ul</span>
+<span class="o">&lt;/</span><span class="n">form</span><span class="o">&gt;</span>
+
+<span class="o">//</span><span class="n">Define</span> <span class="n">style</span>
+<span class="nb">input</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">position</span><span class="p">:</span> <span class="mi">0</span><span class="o">%</span> <span class="mi">50</span><span class="o">%</span><span class="p">;</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">repeat</span><span class="p">:</span> <span class="n">no</span><span class="o">-</span><span class="n">repeat</span><span class="p">;</span>
+  <span class="n">padding</span><span class="o">-</span><span class="n">left</span><span class="p">:</span> <span class="mi">15</span><span class="n">px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nb">input</span><span class="p">:</span><span class="n">required</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">image</span><span class="p">:</span> <span class="n">url</span><span class="p">(</span><span class="s1">&#39;../images/required.png&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nb">input</span><span class="p">:</span><span class="n">focus</span><span class="p">:</span><span class="n">invalid</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">image</span><span class="p">:</span> <span class="n">url</span><span class="p">(</span><span class="s1">&#39;../images/invalid.png&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nb">input</span><span class="p">:</span><span class="n">focus</span><span class="p">:</span><span class="n">valid</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">image</span><span class="p">:</span> <span class="n">url</span><span class="p">(</span><span class="s1">&#39;../images/valid.png&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="o">//</span><span class="k">for</span> <span class="n">FF</span>
+<span class="p">:</span><span class="n">invalid</span> <span class="p">{</span> <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span> <span class="p">}</span>
+<span class="o">//</span><span class="k">for</span> <span class="n">old</span> <span class="n">browser</span>
+<span class="nb">input</span><span class="p">:</span><span class="n">required</span><span class="p">,</span>
+<span class="nb">input</span><span class="p">[</span><span class="n">required</span><span class="p">]</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">image</span><span class="p">:</span> <span class="n">url</span><span class="p">(</span><span class="s1">&#39;../images/required.png&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+    <ul>
+        <li>
+            <label for="url">My website is located at:</label>
+            <input type="text" id="url" name="url" required placeholder="please input url">
+        </li>
+        <input type="submit">
+    </ul>
+</form>
+
+</body>
+</html></div>
+<div class="section" id="the-placeholder-attribute">
+<h3>The placeholder Attribute<a class="headerlink" href="#the-placeholder-attribute" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;please input your url&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;url&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;url&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+    <ul>
+        <li>
+            <label for="url">My website is located at:</label>
+            <input type="text" id="url" name="url" required placeholder="please input url">
+        </li>
+        <input type="submit">
+    </ul>
+</form>
+
+</body>
+</html></div>
+<div class="section" id="the-pattern-attribute">
+<h3>The pattern Attribute<a class="headerlink" href="#the-pattern-attribute" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;password&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;password&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;password&quot;</span> <span class="n">required</span>
+<span class="n">title</span><span class="o">=</span><span class="s2">&quot;(at least 6 characters, no spaces)&quot;</span> <span class="n">pattern</span><span class="o">=</span><span class="s2">&quot;\S{6,}&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+    <ul>
+        <li>
+            <label for="passwordid">Your password:</label>
+            <input type="password" id="passwordid" name="password" required
+                   title="(at least 6 characters, no spaces)" pattern="\S{6,}">
+        </li>
+        <input type="submit">
+    </ul>
+</form>
+
+</body>
+</html></div>
+<div class="section" id="the-disabled-vs-readonly-attribute">
+<h3>The disabled vs. readonly Attribute<a class="headerlink" href="#the-disabled-vs-readonly-attribute" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">disabled</span></code>   <code class="docutils literal"><span class="pre">readonly</span></code></p>
+<!DOCTYPE html>
+<html>
+<body>
+This is testing
+<form>
+    <ul>
+        <li>
+            <label for="firstname">Your first name:</label>
+            <input type="text" id="firstname" name="first" placeholder="disabled input" disabled>
+        </li>
+        <li>
+            <label for="lastname">Your last name:</label>
+            <input type="text" id="lastname" name="last" placeholder="readonly input" readonly value="Wang">
+        </li>
+        <input type="submit">
+    </ul>
+</form>
+
+</body>
+</html></div>
+</div>
+<div class="section" id="input-type">
+<h2>3.2. Input type<a class="headerlink" href="#input-type" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="additional-new-form-control-in-html5">
+<h2>3.3. Additional new form control in HTML5<a class="headerlink" href="#additional-new-form-control-in-html5" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="changes-to-exiting-form-controll">
+<h2>3.4. Changes to exiting form controll<a class="headerlink" href="#changes-to-exiting-form-controll" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../html5_video_audio/index.html" class="btn btn-neutral float-right" title="Video and Audio Todo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="02_HTML5_MORE_SEMANTIC.html" class="btn btn-neutral" title="2. HTML5 More Semantic" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Jun Wang.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
